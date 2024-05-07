@@ -1,36 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap|Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 nav {
     background-color: steelblue;
     padding: 10px;
+    font-family: 'Merriweather', serif;
 }
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 10px;
 }
 h1 {
     color: steelblue;
+    font-family: 'Merriweather', serif;
+    padding: 10px;
 }
 main {
     max-width: 840px;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 1rem;
 }
 main img {
+    float: right;
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    margin: 0 0 1rem 1rem;
 }
 p {
-    padding: 0;
+    padding: 10px;
 }
 aside {
+    position: relative;
     width: 20rem;
-    margin: 1em;
-    border: 1px solid rgb(0, 0, 0, 0.2);
-    padding: 0;
-    background-color:#b5cde1;
-    color:#333;
     text-align: center;
+    font-family:'Poppins', sans-serif;
+}
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 100px;
 }
 aside img {
     width: 200px;
@@ -40,4 +56,15 @@ footer {
     margin-top: 1em;
     border-top: 1px solid steelblue;
     text-align: center;
+}
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 1rem;
+    background-color: #b5cde1;
+    color: #333;
+}
+.indent {
+    padding: 2rem;
 }
