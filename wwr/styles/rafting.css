@@ -92,12 +92,12 @@ div h1 {
 div article img {
     float: right;
     width: 400px; 
-    padding: 20px;
+    padding: 18px;
     z-index: 2;
 }
 div article p {
     position: absolute;
-    top: 20%;
+    top: 19%;
     left: 2.5%;
     max-width: 90%;
     background-color:rgba(254, 239, 229, 0.7);
