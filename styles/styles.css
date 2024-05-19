@@ -7,23 +7,30 @@
 }
 nav {
     background-color: steelblue;
-    padding: 10px;
+    padding: 1rem;
     font-family: 'Merriweather', serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 nav a {
     color: white;
     display: block;
-    padding: 10px;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    text-decoration: none; 
 }
 h1 {
     color: steelblue;
     font-family: 'Merriweather', serif;
     padding: 10px;
+    border-bottom: 2px solid steelblue; 
 }
 main {
-    max-width: 840px;
     font-family: 'Poppins', sans-serif;
     padding-left: 1rem;
+    grid-column: 2/3;
+    margin: 1rem;
 }
 main img {
     float: right;
@@ -32,7 +39,7 @@ main img {
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
-    margin: 0 0 1rem 1rem;
+    margin: 2rem;
 }
 p {
     padding: 10px;
@@ -42,6 +49,8 @@ aside {
     width: 20rem;
     text-align: center;
     font-family:'Poppins', sans-serif;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 aside h2 {
     position: absolute;
@@ -53,12 +62,17 @@ aside img {
     width: 200px;
     height: auto;
 }
-footer {
+header, footer, .grid {
+    max-width: 840px;
+    margin: 0 auto;
     margin-top: 1em;
     border-top: 1px solid steelblue;
-    text-align: center;
 }
-/* Class Selectors */
+.grid {
+    display: grid;
+    align-items: center;
+
+}
 .box {
     margin: 1rem;
     border: 1px solid rgba(0,0,0,.1);
