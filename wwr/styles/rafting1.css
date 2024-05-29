@@ -158,15 +158,9 @@ form {
     padding: 10px;
     max-width: fit-content;
 }
-
-legend {
-    font-weight: 200px;
-}
-
 .contact_items {
 display: flex;
 }
-
 input {
     padding: 0.5rem;
     font-size: 1.1rem;
