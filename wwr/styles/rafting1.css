@@ -156,6 +156,7 @@ form {
     background-color: #FEEFE5;
     display: grid;
     padding: 5px;
+    max-width: fit-content;
 }
 
 legend {
