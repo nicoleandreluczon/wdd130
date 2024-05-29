@@ -166,7 +166,6 @@ input {
     font-size: 1.1rem;
 
 }
-
 .secondary_container {
     display: flex;
     flex-direction: column;
@@ -178,8 +177,6 @@ input {
     flex-direction: column;
     gap: 0px 5px;
 }
-
-
 #message_container {
     display: flex;
     flex-direction: column;
