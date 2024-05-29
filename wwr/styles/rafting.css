@@ -155,7 +155,7 @@ form {
     /* border-radius: 0.5rem; */
     background-color: #FEEFE5;
     display: grid;
-    padding: 30px;
+    padding: 25px;
     max-width: fit-content;
 }
 .contact_items {
