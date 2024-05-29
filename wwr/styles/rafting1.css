@@ -155,7 +155,7 @@ form {
     /* border-radius: 0.5rem; */
     background-color: #FEEFE5;
     display: grid;
-    padding: 50px;
+    padding: 25px;
 }
 
 legend {
@@ -210,7 +210,6 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /* padding: 45px; */
     margin: 20px;
 }
 
