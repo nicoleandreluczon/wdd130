@@ -49,7 +49,7 @@ h1, h2 {
 body {
     font-family: var(--paragraph-font);
     padding: 20px;
-    color: #534F54;
+    color: black;
 }
 a {
     text-decoration: none;
@@ -81,20 +81,17 @@ div .background-image {
     width: 100%;
     height: auto;
 }
-/*The hero div is positioned relative.*/
 div.hero {
     position: relative;
 }
-/*The hero div's h1 and article elements are positioned absolutely so that they appear on top of the hero image.*/
 div h1 {
     position: absolute;
     top: 25px;
-    background-color: rgba(37, 68, 65, 0.9);
-    color: var(--accent1-color);
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
     padding: 20px;
     text-align: center;
 }
-/*The image associated with the hero paragraph is floated to the right.*/
 div article img {
     float: right;
     width: 400px; 
@@ -106,7 +103,7 @@ div article p {
     top: 19%;
     left: 2.5%;
     max-width: 90%;
-    background-color:rgba(254, 239, 229, 0.7);
+    background-color:white;
     color: var(--nav-background-color);
 }
 section img {
@@ -239,4 +236,36 @@ button {
 
 .contact_items p {
     font-size: large;
+}
+.adventures {
+    display: flex;
+    justify-content: space-around;
+    height: 200px; 
+}
+
+.adventures figure {
+    text-align: center;
+}
+
+.adventures img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover; 
+}
+.history-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px; /* Adjust the gap between columns and image as needed */
+}
+
+.history-column {
+    flex: 1;
+}
+
+.history-image {
+    width: 400px; /* Adjust the width of the image as needed */
+    height: auto;
+    object-fit: cover;
+    margin: 0 20px; /* Adjust the margin as needed */
 }
