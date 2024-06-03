@@ -136,7 +136,7 @@ div .contact-us {
     top: 250px;
     left: 800px;
     font-size: 350%;
-    color: white;
+    color: var(--primary-color);
 }
 #background-image {
     width: 100%;
