@@ -7,6 +7,7 @@
     --secondary-color: #534F54; 
     --accent1-color: #49ba7c;
     --accent2-color: #FEEFE5;   
+    --accent3-color: #e6af2e;
 
     --heading-font: 'Merriweather', serif;
     --paragraph-font: 'Poppins', sans-serif;
@@ -26,7 +27,7 @@ header {
 }
 .header-nav {
     background-color: var(--nav-background-color);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     display: flex;
     justify-content: space-around;
     padding: 20px 0;
@@ -72,6 +73,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     position: relative;
+    margin: 0;
 }
 footer p {
     text-align: center;
@@ -141,6 +143,7 @@ div .contact-us {
     left: 800px;
     font-size: 350%;
     color: var(--primary-color);
+    background-color: var(--accent3-color);
 }
 #background-image {
     width: 100%;
@@ -154,10 +157,13 @@ form {
     padding: 1rem;
     /* border: 1px solid rgba(0, 0, 0, 0.1); */
     /* border-radius: 0.5rem; */
-    background-color: #FEEFE5;
+    background-color: var(--accent2-color);
     display: grid;
     padding: 25px;
     max-width: fit-content;
+}
+form h2 {
+    font-size: x-large;
 }
 .contact_items {
 display: flex;
@@ -185,8 +191,8 @@ input {
 }
 
 .form_section_name {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 #name_container {
@@ -223,8 +229,8 @@ main {
 }
 button {
     margin: 1rem;
-    background-color: #254441;
-    color: #FEEFE5;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
     border: none;
     border-radius: .5rem;
     padding: .75rem;
@@ -260,7 +266,7 @@ button {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 20px; /* Adjust the gap between columns and image as needed */
+    gap: 20px; 
 }
 
 .history-column {
@@ -268,8 +274,82 @@ button {
 }
 
 .history-image {
-    width: 400px; /* Adjust the width of the image as needed */
+    width: 400px; 
     height: auto;
     object-fit: cover;
-    margin: 0 20px; /* Adjust the margin as needed */
+    margin: 0 20px; 
+}
+#index-header {
+    z-index: 2;
+    position: absolute;
+    top: 240px;
+    left: 650px;
+    font-size: 225%;
+    color: var(--primary-color);
+}
+.white-text {
+    color: white; 
+    font-size: 125%;
+}
+.newsletter-container {
+    position: relative;
+    display: flex;
+    align-items: center; 
+    padding-top: 7%;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    width: 80%;
+}
+#newsletter-image {
+    position: relative;
+    left: 0px;
+    width: 1000px;
+    height: 400px;
+    padding-right: 10px, var(--accent1-color);
+    object-fit: cover;
+}
+.newsletter-signup {
+    position: absolute;
+    left: 800px;
+    width: 100%;
+    background-color: var(--accent2-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    margin: 0;
+}
+#cta-button {
+    z-index: 3;
+    position: absolute;
+    top: 400px;
+    left: 775px;
+    margin: 2rem auto 0;
+    background-color: var(--accent3-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#cta-button:hover {
+    background-color: var(--primary-color);
+    color: #E6AF2E;
+}
+.trips {
+    display: flex;
+    justify-content: space-around;
+    height: 200px; 
+}
+
+.trips figure {
+    text-align: center;
+}
+
+.trips img {
+    width: 350px;
+    height: 200px;
+    object-fit: cover; 
 }
