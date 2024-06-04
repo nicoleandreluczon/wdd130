@@ -259,7 +259,7 @@ button {
 }
 
 .adventures img {
-    width: 200px;
+    width: 180px;
     height: 150px;
     object-fit: cover; 
 }
@@ -287,6 +287,7 @@ button {
     left: 650px;
     font-size: 225%;
     color: var(--primary-color);
+    background-color: var(--accent1-color);
 }
 .white-text {
     color: white; 
@@ -334,10 +335,16 @@ button {
     font-size: 2rem;
     cursor: pointer;
 }
-
+#cta-button a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
 #cta-button:hover {
     background-color: var(--primary-color);
-    color: #E6AF2E;
+}
+#cta-button a:hover {
+    background-color: var(--primary-color);
+    color: var(--accent3-color);
 }
 .trips {
     display: flex;
